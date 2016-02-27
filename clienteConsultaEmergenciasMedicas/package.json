@@ -1,0 +1,15 @@
+{
+  "name": "cliente-consulta-emergencias-medicas",
+  "version": "1.0.0",
+  "description": "Cliente para ejecutar las pruebas de carga para validar los escenarios de calidad",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diego Bareño, Sebastian Lesmes, Christian Aparicio, Juan Pablo Giraldo",
+  "license": "MIT",
+  "dependencies": {
+    "console.table": "^0.4.0",
+    "loadtest": "^1.3.0"
+  }
+}
