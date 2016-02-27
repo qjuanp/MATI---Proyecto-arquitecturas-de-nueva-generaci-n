@@ -4,6 +4,7 @@
   "description": "Simula la generación de datos procesados desde un MapReduce",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Diego Bareño, Sebastian Lesmes, Christian Aparicio, Juan Pablo Giraldo",
