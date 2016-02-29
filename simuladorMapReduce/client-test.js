@@ -17,7 +17,7 @@ function continueExecution()
 		port: 27017
 	})
    // Envia al topico de la generacion aleatoria y espera respuesta
-	var iteraciones = 1; var index; var partes;
+	var iteraciones = 20000; var index; var partes;
 	for (var i = 0; i < iteraciones; i++) 
 	{
 		index = (i+1);
