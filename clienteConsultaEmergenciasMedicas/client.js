@@ -2,18 +2,6 @@ var reportarEstadoDeLaPrueba = function (latency, result) {
     console.log('Numero de requests generados ->', latency.totalRequests) 
 }
 
-var resultadoDeLaPrueba = function (error, result) {
-    if(error)
-        return console.error(error)
-        
-    console.table({
-        'Escenario': 'Latencia',
-        'Peticiones Totales': result.totalRequests,
-        'Tiempo promedio de Respuesta (Entre 200 y 500 milisegundos)': result.meanLatencyMs,
-        'Peticiones por segundo': result.rps        
-    })
-}
-
 var run = require('loadtest')
 require('console.table')
 
@@ -31,5 +19,25 @@ var pruebaDeEscalabilidad = {
     statusCallback: reportarEstadoDeLaPrueba
 }
 
-run.loadTest(pruebaDeLatencia, resultadoDeLaPrueba)
-run.loadTest(pruebaDeEscalabilidad, resultadoDeLaPrueba)
+run.loadTest(pruebaDeLatencia, function (error, result) {
+    if(error)
+        return console.error(error)
+        
+    console.table({
+        'Escenario': 'Latencia',
+        'Peticiones Totales': result.totalRequests,
+        'Tiempo promedio de Respuesta (Entre 200 y 500 milisegundos)': result.meanLatencyMs,
+        'Peticiones por segundo': result.rps        
+    })
+})
+run.loadTest(pruebaDeEscalabilidad, function (error, result) {
+    if(error)
+        return console.error(error)
+        
+    console.table({
+        'Escenario': 'Escalabilidad',
+        'Peticiones Totales': result.totalRequests,
+        'Tiempo promedio de Respuesta (Entre 200 y 500 milisegundos)': result.meanLatencyMs,
+        'Peticiones por segundo': result.rps        
+    })
+})
