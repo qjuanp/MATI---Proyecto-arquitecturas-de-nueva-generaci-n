@@ -36,7 +36,7 @@ function filtrarEmergencias(rangoUbicaciones, rangoFechas, db, dbError,resultado
 }
 
 function consulta(rangoUbicaciones, rangoFechas, error, resultados){
-    MongoClient.connect('mongodb://192.168.99.100:27017/emergenciasMedicasTest', function (dbError,db) {
+    MongoClient.connect('mongodb://172.28.128.15:27017/emergenciasMedicasTest', function (dbError,db) {
         if(dbError)
             error(dbError)
            
