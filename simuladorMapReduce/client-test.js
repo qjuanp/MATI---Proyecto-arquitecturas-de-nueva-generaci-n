@@ -1,12 +1,5 @@
 var seneca = require('seneca')()
 
-// Conexion a MongoDB:
-seneca.use('mongo-store',{
-	name: 'dbname',
-	host: '172.28.128.15',
-	port: 27017
-})
-
 var client = seneca.client({ host:'localhost', port:8080 })
 
 function pause(segundos)
@@ -17,7 +10,12 @@ function pause(segundos)
 
 function continueExecution()
 {
-   //finish doing things after the pause
+	// Conexion a MongoDB:
+	seneca.use('mongo-store',{
+		name: 'dbname',
+		host: '172.28.128.15',
+		port: 27017
+	})
    // Envia al topico de la generacion aleatoria y espera respuesta
 	var iteraciones = 1; var index; var partes;
 	for (var i = 0; i < iteraciones; i++) 
