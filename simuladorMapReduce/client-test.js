@@ -34,7 +34,7 @@ function continueExecution()
 		    var array = result.respond;
 		    // Cada posicion del arreglo es un campo para el objeto JSON a meter en Mongo:
 		    // 1. Inicializa la collecion:
-		    var record = seneca.make$('emergencias');
+		    var record = seneca.make$('emergenciasMedicasTest');
 		    // 2. Asigna los diferentes atributos al objeto:
 		    partes = array[0].split("|");
 		    record.timeInicial = partes[0];
