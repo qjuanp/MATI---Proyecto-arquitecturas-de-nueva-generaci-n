@@ -2,7 +2,7 @@
   "name": "simulador-mapreduce",
   "version": "1.0.0",
   "description": "Simula la generación de datos procesados desde un MapReduce",
-  "main": "index.js",
+  "main": "client-test.js",
   "scripts": {
     "start": "nodejs server-init.js & nodejs client-test.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +10,9 @@
   "author": "Diego Bareño, Sebastian Lesmes, Christian Aparicio, Juan Pablo Giraldo",
   "license": "MIT",
   "dependencies": {
-    "mongodb": "^2.1.7"
+    "mongo-store": "*",
+    "seneca": "0.6.2",
+    "express": "*",
+    "body-parser": "*"
   }
 }
