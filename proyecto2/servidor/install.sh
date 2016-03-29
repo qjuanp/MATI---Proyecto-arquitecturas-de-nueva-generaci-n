@@ -124,7 +124,14 @@ tar xzf spark-1.6.0-bin-hadoop2.6.tgz
 #service iptables stop
 #chkconfig iptables off
 
+# python y python3
+apt-get install python
+apt-get install python-pip
+apt-get install python3
+apt-get install python3-pip
 
+pip3 install paho-mqtt
+pip3 install kafka-python
 
 
 
