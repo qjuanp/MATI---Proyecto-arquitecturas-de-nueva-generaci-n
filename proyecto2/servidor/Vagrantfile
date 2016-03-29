@@ -1,0 +1,63 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure(2) do |config|
+  
+  config.vm.define :pythonve do |pythonve|
+    config.vm.box = "ubuntu/trusty64"
+	
+	config.ssh.username = 'vagrant'
+	config.ssh.password = 'vagrant'
+	config.ssh.insert_key = 'true'
+	
+    config.vm.network "private_network", type: "dhcp"
+	
+	#config.vm.network "forwarded_port", guest: 33333, host: 33333
+	
+	config.vm.synced_folder "E:\\repositorios\\taller5\\pip\\repositorio\\", "/home/vagrant"
+  end	
+
+  config.vm.define :mosquitto do |mosquitto|
+  
+	config.vm.box = "ubuntu/trusty64"
+	
+	config.vm.provision :shell, path: "install.sh"
+	config.vm.provision :shell, path: "keys.sh"
+	
+	config.ssh.username = 'vagrant'
+	config.ssh.password = 'vagrant'
+	config.ssh.insert_key = 'true'
+	
+	config.vm.network "private_network", type: "dhcp"
+	
+	config.vm.network "forwarded_port", guest: 27017, host: 27018, protocol: "tcp", 
+		auto_correct: true
+	config.vm.network "forwarded_port", guest: 9092, host: 9092, protocol: "tcp", 
+		auto_correct: true
+	config.vm.network "forwarded_port", guest: 4040, host: 4040, protocol: "tcp", 
+		auto_correct: true
+	config.vm.network "forwarded_port", guest: 18080, host: 18080, protocol: "tcp", 
+		auto_correct: true
+	config.vm.network "forwarded_port", guest: 1883, host: 1883, protocol: "tcp", 
+		auto_correct: true 
+	
+	config.vm.synced_folder "E:\\repositorios\\taller5\\MaquinaIoT\\repositorio\\", "/home/vagrant"
+	
+  config.vm.provider "virtualbox" do |vb|
+   # Display the VirtualBox GUI when booting the machine
+  #   vb.gui = true
+  #
+  # Customize the amount of memory on the VM:
+    #vb.customize ["modifyhd", :id, "--resize", 100000]
+    vb.memory = "512"
+    vb.cpus = 1
+    end
+  end
+  
+
+  
+end
