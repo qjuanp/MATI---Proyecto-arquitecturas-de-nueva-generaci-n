@@ -1,0 +1,59 @@
+<head>
+  <title>Temperature Sensor Information</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="main">
+      <h1 class="page-header">Temperature Sensore information</h1>
+      {{> tempSection}}
+      
+      {{> tempHistorySection}}
+    </div>
+  </div>
+</body>
+
+
+<template name="tempSection">
+  - min: {{minTemp}}
+  - current: {{currentTemp}}
+  - max: {{maxTemp}}
+</template>
+
+<template name="tempHistorySection">
+  <h2 class="sun-header">Temperature History</h2>
+  
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Device</th>
+          <th>Temperature</th>
+          <th>Sampled At</th>
+          <th>Processed At</th>
+          <th>Diff</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each temperatures}}
+        {{> tempRecord}}
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</template>
+
+<template name="tempRecord">
+  <tr>
+    <td>{{id}}</td>
+    <td>{{tmp}}</td>
+    <td>{{moFromNow ts withoutSuffix}}</td>
+    <td>{{moFromNow tf withoutSuffix}}</td>
+    <td>{{moDiff ts tf units returnFloat}}</td>
+  </tr>
+</template>
