@@ -9,7 +9,11 @@ import json
 import pymongo_spark
 pymongo_spark.activate()
 
-sc = SparkContext("local[*]","KafkaStreaming")
+conf = SparkConf() \
+            .setAppName("KafkaStreaming") \
+            .set('spark.executor.extraClassPath', '/home/arquitectura/spark-1.6.0-bin-hadoop2.6/lib/mongo-hadoop-spark-1.5.2.jar')
+
+sc = SparkContext(conf=conf)
 stream = StreamingContext(sc, 1) # 1 second window
 
 kafka_stream = KafkaUtils.createStream(stream, \
