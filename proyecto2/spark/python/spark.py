@@ -35,7 +35,7 @@ def ohlc(grouping):
 
 resultRDD = parsed.map(ohlc)
 
-client = MongoClient("mongodb://localhost:80801/meteor")
+client = MongoClient("mongodb://localhost:8081/meteor")
 
 def write(value):
     client.temperature.insert_one(value)
