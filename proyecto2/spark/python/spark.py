@@ -19,7 +19,7 @@ stream = StreamingContext(sc, 1) # 1 second window
 
 kafka_stream = KafkaUtils.createStream(stream, \
                                        "172.24.98.29:8080", \
-                                       "consumerId",
+                                       "test-consumer-group",
                                         {"temperature":1})
                                         
 parsed = kafka_stream.map(lambda (k, v): json.loads(v))
