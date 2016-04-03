@@ -1,0 +1,30 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure(2) do |config|
+  
+config.vm.define :mqttkafka do |mqttkafka|
+    mqttkafka.vm.box = "ubuntu/trusty64"
+	
+	mqttkafka.ssh.username = 'vagrant'
+	mqttkafka.ssh.password = 'vagrant'
+	mqttkafka.ssh.insert_key = 'true'
+	
+    mqttkafka.vm.network "private_network", type: "dhcp"
+	mqttkafka.vm.provision :shell, path: "installMqttKafka.sh"
+	
+	#config.vm.network "forwarded_port", guest: 33333, host: 33333
+	
+	mqttkafka.vm.synced_folder "E:\\repositorios\\taller5\\servidor-mqttkafka\\repositorio\\", "/home/vagrant"
+	
+	mqttkafka.vm.provider "virtualbox" do |vb|
+		vb.memory = "2048"
+		vb.cpus = 1
+    end
+  end
+  
+end
