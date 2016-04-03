@@ -8,6 +8,9 @@ if (Meteor.isClient) {
   });
   
   Template.tempSection.helpers({
+    'count': function(){
+      return Temperatures.find({}).count();
+    },
     'minTemp': function () {
       var temp = Temperatures.findOne({},{sort: {tmp:1}, limit: 1});
       if(!temp) return 0;

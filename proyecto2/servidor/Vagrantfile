@@ -8,56 +8,53 @@
 Vagrant.configure(2) do |config|
   
   config.vm.define :pythonve do |pythonve|
-    config.vm.box = "ubuntu/trusty64"
+    pythonve.vm.box = "ubuntu/trusty64"
 	
-	config.ssh.username = 'vagrant'
-	config.ssh.password = 'vagrant'
-	config.ssh.insert_key = 'true'
-	
-    config.vm.network "private_network", type: "dhcp"
-	
-	#config.vm.network "forwarded_port", guest: 33333, host: 33333
-	
-	config.vm.synced_folder "E:\\repositorios\\taller5\\pip\\repositorio\\", "/home/vagrant"
+		pythonve.ssh.username = 'vagrant'
+		pythonve.ssh.password = 'vagrant'
+		pythonve.ssh.insert_key = 'true'
+		
+		pythonve.vm.network "private_network", type: "dhcp"
+		
+		#pythonve.vm.network "forwarded_port", guest: 33333, host: 33333
+		
+		pythonve.vm.synced_folder "E:\\q\\dev\\ang\\proyecto2\\cliente\\", "/home/vagrant"
   end	
 
   config.vm.define :mosquitto do |mosquitto|
   
-	config.vm.box = "ubuntu/trusty64"
-	
-	config.vm.provision :shell, path: "install.sh"
-	config.vm.provision :shell, path: "keys.sh"
-	
-	config.ssh.username = 'vagrant'
-	config.ssh.password = 'vagrant'
-	config.ssh.insert_key = 'true'
-	
-	config.vm.network "private_network", type: "dhcp"
-	
-	config.vm.network "forwarded_port", guest: 27017, host: 27018, protocol: "tcp", 
-		auto_correct: true
-	config.vm.network "forwarded_port", guest: 9092, host: 9092, protocol: "tcp", 
-		auto_correct: true
-	config.vm.network "forwarded_port", guest: 4040, host: 4040, protocol: "tcp", 
-		auto_correct: true
-	config.vm.network "forwarded_port", guest: 18080, host: 18080, protocol: "tcp", 
-		auto_correct: true
-	config.vm.network "forwarded_port", guest: 1883, host: 1883, protocol: "tcp", 
-		auto_correct: true 
-	
-	config.vm.synced_folder "E:\\repositorios\\taller5\\MaquinaIoT\\repositorio\\", "/home/vagrant"
-	
-  config.vm.provider "virtualbox" do |vb|
-   # Display the VirtualBox GUI when booting the machine
-  #   vb.gui = true
-  #
-  # Customize the amount of memory on the VM:
-    #vb.customize ["modifyhd", :id, "--resize", 100000]
-    vb.memory = "512"
-    vb.cpus = 1
-    end
+		mosquitto.vm.box = "ubuntu/trusty64"
+		
+		mosquitto.vm.provision :shell, path: "install.sh"
+		mosquitto.vm.provision :shell, path: "keys.sh"
+		
+		mosquitto.ssh.username = 'vagrant'
+		mosquitto.ssh.password = 'vagrant'
+		mosquitto.ssh.insert_key = 'true'
+		
+		mosquitto.vm.network "private_network", type: "dhcp"
+		
+		mosquitto.vm.network "forwarded_port", guest: 27017, host: 27018, protocol: "tcp", 
+			auto_correct: true
+		mosquitto.vm.network "forwarded_port", guest: 9092, host: 9092, protocol: "tcp", 
+			auto_correct: true
+		mosquitto.vm.network "forwarded_port", guest: 4040, host: 4040, protocol: "tcp", 
+			auto_correct: true
+		mosquitto.vm.network "forwarded_port", guest: 18080, host: 18080, protocol: "tcp", 
+			auto_correct: true
+		mosquitto.vm.network "forwarded_port", guest: 1883, host: 1883, protocol: "tcp", 
+			auto_correct: true 
+		
+		mosquitto.vm.synced_folder "E:\\q\\dev\\ang\\proyecto2\\servidor\\", "/home/vagrant"
+		
+		mosquitto.vm.provider "virtualbox" do |vb|
+				# Display the VirtualBox GUI when booting the machine
+				#   vb.gui = true
+				#
+				# Customize the amount of memory on the VM:
+					#vb.customize ["modifyhd", :id, "--resize", 100000]
+					vb.memory = "2048"
+					vb.cpus = 2
+		end
   end
-  
-
-  
 end

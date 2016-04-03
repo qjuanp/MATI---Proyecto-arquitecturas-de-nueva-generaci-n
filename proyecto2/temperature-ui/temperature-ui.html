@@ -11,7 +11,9 @@
   <div class="container-fluid">
     <div class="main">
       <h1 class="page-header">Temperature Sensore information</h1>
-      {{> tempSection}}
+      <div class="jumbotron">
+        {{> tempSection}}
+      </div>
       
       {{> tempHistorySection}}
     </div>
@@ -20,9 +22,10 @@
 
 
 <template name="tempSection">
-  - min: {{minTemp}}
-  - current: {{currentTemp}}
-  - max: {{maxTemp}}
+  <h1>Current Temperature: {{currentTemp}}</h1>
+  <button type="button" class="btn btn-lg btn-primary">min: {{minTemp}}</button>
+  <button type="button" class="btn btn-lg btn-info">Signals processed {{count}}</button>
+  <button type="button" class="btn btn-lg btn-danger">max: {{maxTemp}}</button>
 </template>
 
 <template name="tempHistorySection">
@@ -35,8 +38,8 @@
           <th>Device</th>
           <th>Temperature</th>
           <th>Sampled At</th>
-          <th>Processed At</th>
-          <th>Diff</th>
+          <!--<th>Processed At</th>
+          <th>Diff</th>-->
         </tr>
       </thead>
       <tbody>
@@ -53,7 +56,7 @@
     <td>{{id}}</td>
     <td>{{tmp}}</td>
     <td>{{moFromNow ts withoutSuffix}}</td>
-    <td>{{moFromNow tf withoutSuffix}}</td>
-    <td>{{moDiff ts tf units returnFloat}}</td>
+    <!--<td>{{moFromNow tf withoutSuffix}}</td>
+    <td>{{moDiff ts tf units returnFloat}}</td>-->
   </tr>
 </template>
