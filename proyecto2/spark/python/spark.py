@@ -1,5 +1,3 @@
-import pymongo_spark
-
 from pyspark import SparkContext, SparkConf
 from pyspark.streaming import StreamingContext
 from pyspark.streaming.kafka import KafkaUtils
@@ -7,6 +5,9 @@ from pyspark.streaming.kafka import KafkaUtils
 from uuid import uuid1
 
 import json
+
+import pymongo_spark
+pymongo_spark.activate()
 
 sc = SparkContext("local[*]","KafkaStreaming")
 stream = StreamingContext(sc, 1) # 1 second window
@@ -19,7 +20,6 @@ kafka_stream = KafkaUtils.createStream(stream, \
 parsed = kafka_stream.map(lambda (k, v): json.loads(v))
 
 # configuration for output to MongoDB
-pymongo_spark.activate()
 
 def ohlc(grouping):
     key = grouping[0]
