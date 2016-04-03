@@ -43,4 +43,5 @@ def write(value):
 resultRDD.foreachRDD(lambda rdd: rdd.foreach(write))
 
 stream.start()
-stream.awaitTermination() 
+stream.awaitTermination(10)
+stream.stop()
