@@ -1,6 +1,9 @@
+import pymongo_spark
+
 from pyspark import SparkContext, SparkConf
 from pyspark.streaming import StreamingContext
 from pyspark.streaming.kafka import KafkaUtils
+
 from uuid import uuid1
 
 import json
@@ -16,8 +19,7 @@ kafka_stream = KafkaUtils.createStream(stream, \
 parsed = kafka_stream.map(lambda (k, v): json.loads(v))
 
 # configuration for output to MongoDB
-config = {"mongo.output.uri": "mongodb://localhost:3001/meteor.temperature"}
-outputFormatClassName = "com.mongodb.hadoop.MongoOutputFormat"
+pymongo_spark.activate()
 
 def ohlc(grouping):
     key = grouping[0]
@@ -27,4 +29,4 @@ def ohlc(grouping):
     return (None, outputDoc)
 
 resultRDD = parsed.map(ohlc)
-resultRDD.saveAsNewAPIHadoopFile("file:///placeholder", outputFormatClassName, None, None, None, None, config)
+resultRDD.saveToMongoDB("mongodb://localhost:3001/meteor.temperature")
