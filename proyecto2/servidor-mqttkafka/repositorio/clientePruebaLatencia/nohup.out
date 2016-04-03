@@ -1,0 +1,2050 @@
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-6:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-7:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-8:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-9:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-10:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-11:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-13:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-14:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-6:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-7:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-15:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-16:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-17:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-18:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-19:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-20:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-21:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-8:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-9:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-10:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-11:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-13:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-14:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-22:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-23:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-24:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-25:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-26:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-27:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-28:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-15:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-16:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-17:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-18:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-19:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-20:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-21:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-29:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-30:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-31:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-32:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-33:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-34:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-35:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-22:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-23:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-24:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-25:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-26:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-27:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-28:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-36:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-37:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-38:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-39:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-40:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Time After 0
+Time After 1459713953.6025114
+Time After 1459713954.602512
+Time After 1459713955.6025124
+Time After 1459713956.6025128
+Time After 1459713957.6025133
+Time After 1459713958.6025138
+Time After 1459713959.6025143
+Time After 1459713960.6025147
+Time After 1459713961.6025152
+Time After 1459713962.602516
+Time After 1459713963.6049678
+Time After 1459713964.6049683
+Time After 1459713965.6054244
+Time After 1459713966.6087909
+Time After 1459713967.6134176
+Time After 1459713968.6173449
+Time After 1459713969.6173456
+Time After 1459713970.621412
+Time After 1459713971.6214597
+Time After 1459713972.6214602
+Time After 1459713973.6248443
+Time After 1459713974.625206
+Time After 1459713975.6252065
+Time After 1459713976.6254826
+Time After 1459713977.6254828
+Time After 1459713978.6254838
+Time After 1459713979.6255124
+Time After 1459713980.6255128
+Time After 1459713981.629204
+Time After 1459713982.6328738
+Time After 1459713983.6330535
+Time After 1459713984.633221
+Time After 1459713985.6332214
+Time After 1459713986.6374235
+Time After 1459713987.637425
+Time After 1459713988.6450481
+Time After 1459713989.645138
+Time After 1459713990.6451786
+Time After 1459713991.645179
+Time After 1459713992.6495538
+Exception in thread Thread-41:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+
+Exception in thread Thread-29:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-30:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-31:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-32:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-33:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-34:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-35:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-36:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-37:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-38:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-39:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Exception in thread Thread-40:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+Time After 0
+Time After 1459713960.6830356
+Time After 1459713961.6841085
+Time After 1459713962.6891818
+Time After 1459713963.6891823
+Time After 1459713964.6894946
+Time After 1459713965.6935844
+Time After 1459713966.6935847
+Time After 1459713967.695727
+Time After 1459713968.6968908
+Time After 1459713969.6990058
+Time After 1459713970.7007465
+Time After 1459713971.700747
+Time After 1459713972.7007475
+Time After 1459713973.700902
+Time After 1459713974.705706
+Time After 1459713975.7057064
+Time After 1459713976.7089334
+Time After 1459713977.7089338
+Time After 1459713978.708934
+Time After 1459713979.7171574
+Time After 1459713980.7171576
+Time After 1459713981.7171586
+Time After 1459713982.717159
+Time After 1459713983.7207801
+Time After 1459713984.7257288
+Time After 1459713985.7257292
+Time After 1459713986.7287843
+Time After 1459713987.7288115
+Time After 1459713988.728812
+Time After 1459713989.729018
+Time After 1459713990.7292542
+Time After 1459713991.7292545
+Time After 1459713992.7292547
+Time After 1459713993.7292562
+Time After 1459713994.7292566
+Time After 1459713995.7292573
+Time After 1459713996.7292578
+Time After 1459713997.7294085
+Time After 1459713998.7294428
+Time After 1459713999.7294543
+Exception in thread Thread-41:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "loadtest.py", line 32, in publisher2
+    publish.single("temperature", mensaje2 , hostname="mascotqueue.mascotsens.co", tls=adic)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 216, in single
+    multiple([msg], hostname, port, client_id, keepalive, will, auth, tls, protocol)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/publish.py", line 169, in multiple
+    client.connect(hostname, port, keepalive)
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 612, in connect
+    return self.reconnect()
+  File "/usr/local/lib/python3.4/dist-packages/paho/mqtt/client.py", line 747, in reconnect
+    ciphers=self._tls_ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 911, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.4/ssl.py", line 601, in __init__
+    self.do_handshake()
+  File "/usr/lib/python3.4/ssl.py", line 828, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
