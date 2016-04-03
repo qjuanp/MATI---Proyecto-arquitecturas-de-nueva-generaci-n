@@ -5,7 +5,7 @@ from uuid import uuid1
 
 import json
 
-sc = SparkContext(appName="KafkaStreaming")
+sc = SparkContext("local[*]","KafkaStreaming")
 stream = StreamingContext(sc, 1) # 1 second window
 
 kafka_stream = KafkaUtils.createStream(stream, \
@@ -16,7 +16,7 @@ kafka_stream = KafkaUtils.createStream(stream, \
 parsed = kafka_stream.map(lambda (k, v): json.loads(v))
 
 # configuration for output to MongoDB
-config["mongo.output.uri"] = "mongodb://localhost:27017/marketdata.fiveminutebars"
+config = {"mongo.output.uri": "mongodb://localhost:3001/meteor.temperature"}
 outputFormatClassName = "com.mongodb.hadoop.MongoOutputFormat"
 
 def ohlc(grouping):
