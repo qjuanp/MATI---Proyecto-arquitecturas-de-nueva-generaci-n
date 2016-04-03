@@ -35,8 +35,9 @@ def ohlc(grouping):
 
 resultRDD = parsed.map(ohlc).foreachRDD()
 
-
-
 client = MongoClient("mongodb://localhost:3001/meteor")
 
-resultRDD.foreachRDD(lambda (x): client.temperature.insert_one(x))
+def write(value):
+    client.temperature.insert_one(value)
+
+resultRDD.foreachRDD(lambda rdd: rdd.foreach(write))
