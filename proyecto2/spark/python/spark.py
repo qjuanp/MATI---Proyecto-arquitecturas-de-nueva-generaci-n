@@ -41,3 +41,6 @@ def write(value):
     client.temperature.insert_one(value)
 
 resultRDD.foreachRDD(lambda rdd: rdd.foreach(write))
+
+stream.start()             // Start the computation
+stream.awaitTermination() 
