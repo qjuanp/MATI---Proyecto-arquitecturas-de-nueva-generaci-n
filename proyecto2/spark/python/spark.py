@@ -33,7 +33,7 @@ def ohlc(grouping):
     outputDoc = { "id": value["id"],"tmp": value["tmp"], "ts":value["ts"] } 
     return (None, outputDoc)    
 
-resultRDD = parsed.map(ohlc).foreachRDD()
+resultRDD = parsed.map(ohlc)
 
 client = MongoClient("mongodb://localhost:3001/meteor")
 
