@@ -3,7 +3,7 @@ var Temperatures = new Mongo.Collection("temperatures");
 if (Meteor.isClient) {
   Template.tempHistorySection.helpers({
     'temperatures': function () {
-      return Temperatures.find({},{sort: {ts:-1},limit:100})
+      return Temperatures.find({},{sort: {ts:-1},limit:20})
     }
   });
   
