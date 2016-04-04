@@ -1,6 +1,7 @@
 from pyspark import SparkContext, SparkConf
 from pyspark.streaming import StreamingContext
 from pyspark.streaming.kafka import KafkaUtils
+from pymongo import MongoClient
 
 from uuid import uuid1
 
@@ -18,19 +19,29 @@ stream = StreamingContext(sc, 1) # 1 second window
 
 kafka_stream = KafkaUtils.createStream(stream, \
                                        "172.24.98.29:8080", \
-                                       "raw-event-streaming-consumer",
-                                        {"temperature":1})
+                                       "test-consumer-group",
+                                        {"temperature":0})
                                         
 parsed = kafka_stream.map(lambda (k, v): json.loads(v))
 
-# configuration for output to MongoDB
 
 def ohlc(grouping):
     key = grouping[0]
     value = grouping[1]
-    
+    print key
+    print value
     outputDoc = { "id": value["id"],"tmp": value["tmp"], "ts":value["ts"] } 
-    return (None, outputDoc)
+    return (None, outputDoc)    
 
 resultRDD = parsed.map(ohlc)
-resultRDD.saveToMongoDB("mongodb://localhost:3001/meteor.temperature")
+
+client = MongoClient("mongodb://localhost:8081/meteor")
+
+def write(value):
+    client.temperature.insert_one(value)
+
+resultRDD.foreachRDD(lambda rdd: rdd.foreach(write))
+
+stream.start()
+stream.awaitTermination(10)
+stream.stop()
