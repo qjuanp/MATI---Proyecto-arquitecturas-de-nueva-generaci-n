@@ -29,7 +29,7 @@
 </template>
 
 <template name="tempHistorySection">
-  <h2 class="sun-header">Temperature History</h2>
+  <h2 class="sun-header">Temperature History (Last 100 temperatures)</h2>
   
   <div class="table-responsive">
     <table class="table table-striped">
@@ -38,8 +38,7 @@
           <th>Device</th>
           <th>Temperature</th>
           <th>Sampled At</th>
-          <!--<th>Processed At</th>
-          <th>Diff</th>-->
+          <th>Diff</th>
         </tr>
       </thead>
       <tbody>
@@ -56,7 +55,6 @@
     <td>{{id}}</td>
     <td>{{tmp}}</td>
     <td>{{moFromNow ts withoutSuffix}}</td>
-    <!--<td>{{moFromNow tf withoutSuffix}}</td>
-    <td>{{moDiff ts tf units returnFloat}}</td>-->
+    <td>{{diff}}</td>-->
   </tr>
 </template>
