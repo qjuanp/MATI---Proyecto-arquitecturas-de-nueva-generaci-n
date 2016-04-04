@@ -1,28 +1,26 @@
 var Temperatures = new Mongo.Collection("temperatures");
 
 if (Meteor.isClient) {
+  var filter = { id:0 };
   Template.tempHistorySection.helpers({
     'temperatures': function () {
-      return Temperatures.find({},{sort: {ts:-1},limit:20})
+      return Temperatures.find(filter,{sort: {ts:-1},limit:20})
     }
   });
   
   Template.tempSection.helpers({
-    'count': function(){
-      return Temperatures.find({}).count();
-    },
     'minTemp': function () {
-      var temp = Temperatures.findOne({},{sort: {tmp:1}, limit: 1});
+      var temp = Temperatures.findOne(filter,{sort: {tmp:1}, limit: 1});
       if(!temp) return 0;
       return temp.tmp;
     },
     'currentTemp':function(){
-      var temp =  Temperatures.findOne({},{sort: {ts:-1},limit: 1});
+      var temp =  Temperatures.findOne(filter,{sort: {ts:-1},limit: 1});
       if(!temp) return 0;
       return temp.tmp;
     },
     'maxTemp':function () {
-      var temp = Temperatures.findOne({},{sort: {tmp:-1},limit: 1});
+      var temp = Temperatures.findOne(filter,{sort: {tmp:-1},limit: 1});
       if(!temp) return 0;
       return temp.tmp;
     }
