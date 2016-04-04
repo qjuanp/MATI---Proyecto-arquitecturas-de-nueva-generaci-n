@@ -1,7 +1,7 @@
 var Temperatures = new Mongo.Collection("temperatures");
 
 if (Meteor.isClient) {
-  var filter = { id: { $eq:'0'} };
+  var filter = { id:'0' };
   Template.tempHistorySection.helpers({
     'temperatures': function () {
       return Temperatures.find(filter,{sort: {ts:-1},limit:20})
