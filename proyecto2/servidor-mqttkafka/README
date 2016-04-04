@@ -1,0 +1,32 @@
+Esta carpeta contiene todo lo necesario para configurar el equipo que funciona
+como servidor de Mosquitto y Kafka, ademas tiene la prueba de carga para el 
+escenario de calidad de escalabilidad.
+
+Aqui se muestran los pasos de configuracion y ejecucion del escenario de calidad 
+esta máquina. Es necesario la ejecución de pasos manuales para habilitar los servicios.
+Aun así el archivo Vagrantfile y installMqttKafka.sh preparan gran parte de los 
+requisitos
+
+Estructura de carpetas
+
+-repositorio
+|----bridgeKafka				Carpeta con el código que tiene la función de bridge entre Kafka y Mosquito
+    |----dispositivo1.crt			Certificado usado por el bridge para establecer la conexión MQTT-TLS
+    |----dispositivo1.key			Llave usada por el bridge para la comunicacion MQTT-TLS
+    |----subscriber.py				Programa python que funciona como bridge entre kafka y mosquitto.
+|----clientePruebaLatencia		Contiene la prueba de latencia
+    |----dispositivo1.crt			Certificado de la conexion MQTT-TLS para la prueba de carga
+    |----dispositivo1.key			Llave de la conexion MQTT-TLS para la prueba de carga
+    |----loadtest.py				Archivo python para la prueba de carga del escenario de calidad
+|----mosquitto					Archivos de configuracion para el servidor MQTT Mosquitto
+    |----certnew.crt				Certificado del servidor MQTT para la comunicacion TLS
+    |----mascot1.key				Llave del servidor MQTT para la comunicacion TLS
+|----mascotsens.cer					Entidad certificadora usada para comunicacion MQTT via TLS
+-Vagrantfile:					Contiene la configuracion base de la VM
+-installMqttKafka.sh   			Archivo de instalacion de paquetes requeridos por la VM
+        
+Comandos adicionales: Para el funcionamiento de este servidor se debe habilitar con los siguientes comandos:
+
+kafka_2.11-0.9.0.1/bin/zookeeper-server-start.sh -daemon kafka_2.11-0.9.0.1/config/zookeeper.properties
+kafka_2.11-0.9.0.1/bin/kafka-server-start.sh -daemon kafka_2.11-0.9.0.1/config/server.properties     
+kafka_2.11-0.9.0.1/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic temperature
