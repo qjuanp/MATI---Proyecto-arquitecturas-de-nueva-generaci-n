@@ -1,0 +1,1 @@
+El servidor.py usa los scripts que se encuentran en la carpeta Scripts-bat

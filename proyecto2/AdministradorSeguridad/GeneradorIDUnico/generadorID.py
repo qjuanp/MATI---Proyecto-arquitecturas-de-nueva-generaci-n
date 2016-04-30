@@ -75,4 +75,4 @@ mensajeCifradoB64 = base64.b64encode(idEmpaquetado)
 
 archivo.write(mensajeCifradoB64)
 archivo.close()
-print "Archivo generado con nombre: " + sys.argv[1]
+print "Archivo generado con nombre: " + sys.argv[2]
